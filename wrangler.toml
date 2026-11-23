@@ -1,0 +1,19 @@
+name = "wss-qr-tracker"
+main = "src/index.js"
+compatibility_date = "2025-11-01"
+workers_dev = true
+preview_urls = false
+
+# Optional: set to your custom domain (e.g. "https://go.example.com") so the
+# dashboard and QR codes always use it. Defaults to the host you open /admin on.
+# [vars]
+# PUBLIC_BASE_URL = "https://go.example.com"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wss-qr-tracker-db"
+database_id = "31660647-b294-4d22-a893-177f60d2e478"
+migrations_dir = "migrations"
+
+[observability]
+enabled = true
